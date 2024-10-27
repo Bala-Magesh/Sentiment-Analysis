@@ -3,10 +3,10 @@ const { google } = require('googleapis');
 const fetch = require('node-fetch'); // Ensure you have this installed
 
 // Your Google Sheets API key
-const apiKey = 'AIzaSyCo_VL605kqdwtv_4kPqG_HTG6ej785NeY';
+const apiKey = '';
 
 // Your Google Sheet ID
-const spreadsheetId = '1QxZRMBdzMwGUKOa-BdVjUX9c1W1i85iC32-XJv8kptk';
+const spreadsheetId = '';
 
 // Specify the range of data to fetch (adjust as necessary)
 const range = 'Form Responses 1!A2:G10';
@@ -72,7 +72,7 @@ async function fetchData() {
 }
 
 async function getGeminiResponse(promptText) {
-  const apiKey = "AIzaSyDovVJXsZezpyPMeoE3jAgcLwudmPXeJ6A"; // Replace with your actual API key
+  const apiKey = ""; // Replace with your actual API key
   const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
 
   const requestBody = {
